@@ -22,7 +22,9 @@
                 center: true,                    
                 transition: 'slide', // none/fade/slide/convex/concave/zoom
                 {{end}}
-                plugins: []
+                plugins: [
+                    {{if len (.NodesByTag "#code")}}RevealHighlight,{{end}}
+                ]
             });    
         </script>            
 	</body>

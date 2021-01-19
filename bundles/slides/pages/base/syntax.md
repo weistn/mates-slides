@@ -135,7 +135,7 @@ Styles: revealjs/dist/theme/sky.css
 DefaultAttrib: class
 Mode: code
 Styles: revealjs/plugin/highlight/monokai.css
-Resources: revealjs/plugin/highlight/highlight.js
+Scripts: revealjs/plugin/highlight/highlight.js
 Parenthood: text
 
 <pre><code data-trim data-noescape{{if .ID}} id="{{.ID}}"{{end}}{{if .Class}} class="{{.Class}}"{{end}}{{if .Style}} style="{{.Style}}"{{end}}>{{.Content}}</code></pre>
