@@ -1,0 +1,29 @@
+<!doctype html>
+<html>
+	<head>
+	<meta charset="utf-8">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+	{{block "css" .}}{{.Styles}}{{end}}
+    {{block "js" .}}{{.Scripts}}{{end}}
+	<title>{{ block "title" . }}{{ .Site.Title }}{{ end }}
+    </title>
+	</head>
+	<body>
+        {{block "main" .}}{{.Content}}{{end}}
+        <script>
+            // More info https://revealjs.com
+            Reveal.initialize({
+                {{block "reveal-config" .}}
+                controls: true,
+                progress: true,
+                history: true,
+                center: true,                    
+                transition: 'slide', // none/fade/slide/convex/concave/zoom
+                {{end}}
+                plugins: []
+            });    
+        </script>            
+	</body>
+</html>
