@@ -1,7 +1,5 @@
----
 Type: sky
 Title: My Slidedeck
----
 
 # Slide one
 
