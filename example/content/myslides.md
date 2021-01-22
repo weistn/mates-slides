@@ -1,8 +1,7 @@
 ---
+Type: sky
 Title: My Slidedeck
 ---
-
-#blacktheme
 
 # Slide one
 

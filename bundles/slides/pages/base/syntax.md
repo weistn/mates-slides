@@ -2,7 +2,6 @@
 Parents: #root
 Styles: 
   - revealjs/dist/reveal.css
-  - revealjs/dist/theme/simple.css
 Scripts:
   - revealjs/dist/reveal.js
   
@@ -102,34 +101,6 @@ Parenthood: default-root
 <div {{if .ID}} id="{{.ID}}"{{end}}{{if .Class}} class="mates-main {{.Class}}"{{else}} class="mates-main"{{end}}{{if .Style}} style="{{.Style}}"{{end}}>
 {{.Content}}
 </div>
-
-<!-- Back to one-column mode -->
-
-#define:#blacktheme
-Parents: #slidedeck
-Styles: revealjs/dist/theme/black.css
-Resources:
-  - revealjs/dist/theme/fonts/source-sans-pro/source-sans-pro-italic.eot
-  - revealjs/dist/theme/fonts/source-sans-pro/source-sans-pro-italic.ttf
-  - revealjs/dist/theme/fonts/source-sans-pro/source-sans-pro-italic.woff
-  - revealjs/dist/theme/fonts/source-sans-pro/source-sans-pro-regular.eot
-  - revealjs/dist/theme/fonts/source-sans-pro/source-sans-pro-regular.ttf
-  - revealjs/dist/theme/fonts/source-sans-pro/source-sans-pro-regular.woff  
-  - revealjs/dist/theme/fonts/source-sans-pro/source-sans-pro-semibold.eot
-  - revealjs/dist/theme/fonts/source-sans-pro/source-sans-pro-semibold.ttf
-  - revealjs/dist/theme/fonts/source-sans-pro/source-sans-pro-semibold.woff  
-  - revealjs/dist/theme/fonts/source-sans-pro/source-sans-pro-semibolditalic.eot
-  - revealjs/dist/theme/fonts/source-sans-pro/source-sans-pro-semibolditalic.ttf
-  - revealjs/dist/theme/fonts/source-sans-pro/source-sans-pro-semibolditalic.woff  
-  - revealjs/dist/theme/fonts/source-sans-pro/source-sans-pro.css
-
-<!-- Uses black theme -->
-
-#define:#skytheme
-Parents: #slidedeck
-Styles: revealjs/dist/theme/sky.css
-
-<!-- Uses sky theme -->
 
 #define:#code
 DefaultAttrib: class
