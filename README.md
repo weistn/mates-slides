@@ -14,10 +14,10 @@ Alternatively, you can set the `MATESPATH` environment variable.
 
 ```bash
 cd example
-mates -path ../ .
+mates -path ../../ .
 ```
 
-This will build the site in the current directory (e.g. `.`) and search for bundles in `../`.
+This will build the site in the current directory (e.g. `.`) and search for bundles in `../../`.
 The output can be found in the `public` directory.
 The resulting files can be copied to any web server.
 To test locally, use `python` to serve the static web pages
