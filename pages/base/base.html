@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 	{{block "css" .}}{{.Styles}}{{end}}
     {{block "js" .}}{{.Scripts}}{{end}}
-	<title>{{ block "title" . }}{{ .Site.Title }}{{ end }}
+	<title>{{ block "title" . }}{{ .Site.Title}}/{{.Title }}{{ end }}
     </title>
 	</head>
 	<body>
